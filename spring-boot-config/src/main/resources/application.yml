@@ -1,0 +1,18 @@
+server:
+           port: 8081
+
+           person:
+             lastName: yang
+             age: 22
+             boss: true
+             birth: 2020/09/21
+             maps:
+               k1: value1
+               k2: value2
+             lists:
+               - one
+               - two
+               - three
+             dog:
+               name: dogName
+               age: 1

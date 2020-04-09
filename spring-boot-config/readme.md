@@ -1,6 +1,11 @@
-# yaml 文件配置应用
+# 配置文件的注入
 
-## 1、yaml 语法
+配置文件中的属性可以通过以下几个注解注入：
+- `@ConfigurationProperties`
+- `@Value`
+- `@PropertiesSource`
+
+## 1、application.yml
 ### 1.1 基本语法
 
 K:(空格)V：表示一堆键值对（空格必须有）。
@@ -61,7 +66,8 @@ pets: [cat,dog,pig]
 
 在 `application.yaml` 中：
 1. 通过配置将服务器端口号改成8081；
-2. 在yaml中配置一个person对象，并且将该person的值注入到java `Person`类中去。
+2. 在yaml中配置一个person对象，并且将该person的值用`@ConfigurationProperties`注入到java `Person`类中去。
+3. 在yaml中配置一个对象rectangle，并且将该rectangle的值用`@Value`注入到java `Rectangle`类中。
 
 yml中的配置：
 ```$yml
@@ -114,3 +120,31 @@ public class Person {
 用`setter`方法将配置中的值赋给对应的属性。**因为在测试中如果没有`setter`方法，就会报错：不能将配置属性值通过setter
 方法绑定到Person类中对应的属性上**
 
+
+
+
+yaml中的rectangle：
+```yaml
+rectangle:
+  length: 20
+  width: 30
+```
+java中的Rectangle：
+```java
+@Component
+@Getter
+@ToString
+public class Rectangle {
+
+  private int length;
+
+  private int width;
+
+  public Rectangle(
+      @Value("${rectangle.length}") String length, @Value("${rectangle.width}") String width) {
+    this.length = Integer.parseInt(length);
+    this.width = Integer.parseInt(width);
+  }
+
+}
+```

@@ -113,7 +113,7 @@ public class Person {
 
 ```
 
-- **@ConfigurationProperties** 注解到哪个类上，就表示这个类的bean的值是从配置文件中获取的。
+- **@ConfigurationProperties** 它的作用是从配置文件中绑定属性到对应的bean上。
 - **prefix = "person"** 将Person类中的属性和yaml配置文件中person中的属性一一映射。
 - 只有Spring 容器中的bean才能使用ConfigurationProperties功能，所以必须给 `Person` 类加上`@Component` 注解。
 - 这个 ConfigurationProperties 的实现过程应该是：Person先通过无参构造函数创建了 person 对象，person对象再使

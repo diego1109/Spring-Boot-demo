@@ -1,0 +1,1 @@
+[自动配置原理](https://diego1109.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2020/04/14/spring-boot-auto-configuration/)

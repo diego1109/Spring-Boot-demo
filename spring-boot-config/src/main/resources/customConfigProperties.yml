@@ -1,0 +1,11 @@
+custom:
+  hostname: host@mail.com
+  port: 9000
+  from: mailer@mail.com
+  defaultRecipients:
+    - admin@mail.com
+    - owner@mail.com
+  additionalHeaders:
+    redelivery: true
+    secure: true
+    p3: value

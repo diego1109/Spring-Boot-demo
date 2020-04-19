@@ -33,6 +33,5 @@ public class Person {
 
     private Map<String,Object> maps;
     private List<Object> lists;
-    private Dog dog;
 
 }

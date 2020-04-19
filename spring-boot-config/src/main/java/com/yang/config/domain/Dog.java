@@ -2,15 +2,20 @@ package com.yang.config.domain;
 
 
 import lombok.Getter;
-import lombok.Setter;
 import lombok.ToString;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+/**
+ * @Value注解注入单个String类型属性。
+ */
+
 @Getter
-@Setter
 @ToString
 @Component
 public class Dog {
+    @Value("${dog.name}")
     private String name;
-    private Integer age;
+    @Value("${dog.color}")
+    private String[]  color;
 }

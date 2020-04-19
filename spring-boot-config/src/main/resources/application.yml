@@ -1,9 +1,3 @@
-server:
- port: 8081
-spring:
-  profiles:
-    active: dev
-
 person:
  lastName: yang
  age: 22
@@ -16,22 +10,26 @@ person:
    - one
    - two
    - three
- dog:
-   name: dogName
-   age: 1
+
+dog:
+  name: dogName
+  color: black
+
+
 
 rectangle:
   length: 20
   width: 30
 
----
-server:
-  port: 8082
-spring:
-  profiles: dev
+mail:
+  hostname: host@mail.com
+  port: 9000
+  from: mailer@mail.com
+  defaultRecipients:
+    - admin@mail.com
+    - owner@mail.com
+  additionalHeaders:
+    redelivery: true
+    secure: true
+    p3: value
 
----
-server:
-  port: 8084
-spring:
-  profiles: prod

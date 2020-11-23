@@ -1,0 +1,4 @@
+com/example/model/BeerExport.java
+ com.example.model.BeerExport
+com/example/web/BeerSelect.java
+ com.example.web.BeerSelect

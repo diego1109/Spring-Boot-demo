@@ -4,18 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13c6173d-8540-4112-816c-7ca1a6e73410" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filter/FilterApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filter/api/HelloFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/filter/FilterApplicationTests.java" beforeDir="false" />
+    <list default="true" id="e1635f41-afd8-4fa5-8ac6-ff61fc49c1a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/api/FilterApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/configs/ServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/myfilters/CustomFilter1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/myfilters/CustomFilter2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +50,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -56,8 +65,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1l2ZXSQozBe9dDH67X2nsoLDu9R" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1l2xO7XbDWCL0n5H2L2yTq8uUQV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
@@ -71,43 +82,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ForwardAndRedirectApplication">
+  <component name="RunManager">
     <configuration name="FilterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="filter.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.filter.ForwardAndRedirectApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.filter.FilterApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ForwardAndRedirectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ForwardAndRedirect.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.filter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.filter.ForwardAndRedirectApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.ForwardAndRedirectApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="13c6173d-8540-4112-816c-7ca1a6e73410" name="Default Changelist" comment="" />
-      <created>1606797185664</created>
+      <changelist id="e1635f41-afd8-4fa5-8ac6-ff61fc49c1a7" name="Default Changelist" comment="" />
+      <created>1606808951467</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606797185664</updated>
-      <workItem from="1606797187351" duration="4794000" />
-      <workItem from="1606805465622" duration="182000" />
+      <updated>1606808951467</updated>
+      <workItem from="1606808953170" duration="432000" />
+      <workItem from="1606809931706" duration="326000" />
+      <workItem from="1606811016169" duration="5053000" />
     </task>
     <servers />
   </component>
@@ -115,64 +109,52 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="946" y="437" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606805406958">
+    <state x="1093" y="442" key="#com.intellij.ide.util.MemberChooser" timestamp="1606813522621">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="946" y="437" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1606805406958" />
-    <state width="2518" height="409" key="GridCell.Tab.0.bottom" timestamp="1606805652028">
+    <state x="1093" y="442" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1606813522621" />
+    <state x="810" y="662" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606811725512">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1606805652028" />
-    <state width="2518" height="409" key="GridCell.Tab.0.center" timestamp="1606805652027">
+    <state x="810" y="662" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1606811725512" />
+    <state width="2518" height="409" key="GridCell.Tab.0.bottom" timestamp="1606820630646">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1606805652027" />
-    <state width="2518" height="409" key="GridCell.Tab.0.left" timestamp="1606805652027">
+    <state width="2518" height="409" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1606820630646" />
+    <state width="2518" height="409" key="GridCell.Tab.0.center" timestamp="1606820630645">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1606805652027" />
-    <state width="2518" height="409" key="GridCell.Tab.0.right" timestamp="1606805652028">
+    <state width="2518" height="409" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1606820630645" />
+    <state width="2518" height="409" key="GridCell.Tab.0.left" timestamp="1606820630645">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1606805652028" />
-    <state width="2518" height="409" key="GridCell.Tab.1.bottom" timestamp="1606805652028">
+    <state width="2518" height="409" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1606820630645" />
+    <state width="2518" height="409" key="GridCell.Tab.0.right" timestamp="1606820630646">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1606805652028" />
-    <state width="2518" height="409" key="GridCell.Tab.1.center" timestamp="1606805652028">
+    <state width="2518" height="409" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1606820630646" />
+    <state width="2518" height="409" key="GridCell.Tab.1.bottom" timestamp="1606820630647">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1606805652028" />
-    <state width="2518" height="409" key="GridCell.Tab.1.left" timestamp="1606805652028">
+    <state width="2518" height="409" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1606820630647" />
+    <state width="2518" height="409" key="GridCell.Tab.1.center" timestamp="1606820630647">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1606805652028" />
-    <state width="2518" height="409" key="GridCell.Tab.1.right" timestamp="1606805652028">
+    <state width="2518" height="409" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1606820630647" />
+    <state width="2518" height="409" key="GridCell.Tab.1.left" timestamp="1606820630647">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="409" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1606805652028" />
-    <state width="2518" height="502" key="GridCell.Tab.2.bottom" timestamp="1606805455807">
+    <state width="2518" height="409" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1606820630647" />
+    <state width="2518" height="409" key="GridCell.Tab.1.right" timestamp="1606820630647">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.2.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1606805455807" />
-    <state width="2518" height="502" key="GridCell.Tab.2.center" timestamp="1606805455806">
+    <state width="2518" height="409" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1606820630647" />
+    <state width="500" height="456" key="SwitcherDM" timestamp="1606814152425">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.2.center/0.23.2560.1417@0.23.2560.1417" timestamp="1606805455806" />
-    <state width="2518" height="502" key="GridCell.Tab.2.left" timestamp="1606805455806">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state width="2518" height="502" key="GridCell.Tab.2.left/0.23.2560.1417@0.23.2560.1417" timestamp="1606805455806" />
-    <state width="2518" height="502" key="GridCell.Tab.2.right" timestamp="1606805455806">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state width="2518" height="502" key="GridCell.Tab.2.right/0.23.2560.1417@0.23.2560.1417" timestamp="1606805455806" />
-    <state width="500" height="447" key="SwitcherDM" timestamp="1606802923266">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state width="500" height="447" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1606802923266" />
+    <state width="500" height="456" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1606814152425" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/filter$FilterApplication.ic" NAME="FilterApplication Coverage Results" MODIFIED="1606804895993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/filter$FilterApplication.ic" NAME="FilterApplication Coverage Results" MODIFIED="1606814103364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

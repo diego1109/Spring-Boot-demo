@@ -1,14 +1,14 @@
-###功能：
+### 功能：
 ```txt
 测试请求转发和请求重定向。
 ```
 
-###依赖：
+### 依赖：
 ```groovy
 compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
 ```
 
-###NOTE：
+### NOTE：
 转发（重定向）目的地：
 ```java
   @GetMapping("/forward")
@@ -37,7 +37,7 @@ compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
   }
 ```
 
-###测试 URL
+### 测试 URL
 转发：
 ```java
 http://localhost:8080/hello/forward

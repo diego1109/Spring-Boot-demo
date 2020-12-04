@@ -89,7 +89,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
        .passwordEncoder(new BCryptPasswordEncoder());
   }
 }
-
 ```
 ```java
 @Component
@@ -112,6 +111,19 @@ class CustomUserDetailsService implements UserDetailsService {
 }
 ```
 
+#### Spring Security 框架
+官网链接： https://spring.io/guides/topicals/spring-security-architecture。
+
+认证方式（四种）：
+- in-memory。
+- JDBC。这种要拼 SQL。
+- LDAP。
+- custom UserDetailsService。
+
+```text
+Spring Security provides some configuration helpers to quickly get common authentication manager features set up in your application. 
+The most commonly used helper is the AuthenticationManagerBuilder, which is great for setting up in-memory, JDBC, or LDAP user details or for adding a custom UserDetailsService. 
+```
 
 
 333、请求转发和重定向。
